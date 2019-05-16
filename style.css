@@ -168,11 +168,10 @@ a:hover {
 
 /* название стихотворения */
 .poemTitle {
-    padding-bottom: 1.4em;
     font-size: 28px;
     font-weight: lighter;
     color: brown;
-    line-height:0.2em;
+   
 }
 
 .poetTitle {
