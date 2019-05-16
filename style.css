@@ -1,0 +1,302 @@
+@font-face{
+    font-family: 'EB Garamond';
+    src: url('./font/EB_Garamond/EBGaramond-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Playfair Display';
+    src: url('./font/Playfair_Display/Playfair_Display/PlayfairDisplay-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/* здесь стили элементов, содержание которых одинаково для всех страниц сайта */
+body {
+    padding: 100px 100px 0;
+    /*background-color: pink;*/
+}
+
+p, h1, h2, h3, ol {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+}
+
+ol {
+    padding-left: 3em;
+}
+
+/* название проекта и сайта */
+.header-title {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    margin-bottom: 20px;
+    color:rgb(255,64,64);
+}
+
+/* меню */
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* пункты меню */
+a {
+    /*border: 1px solid orange;*/
+    padding-left: 10px;
+    font-size: 30px;
+    /*text-decoration: none;*/
+    color: black;
+    transition: opacity .4s ease-in-out;
+}
+
+/* ссылки при наведении мыши */
+a:hover {
+    color: rgb(244,64,64);
+    opacity: 1;
+}
+
+/* меню прилипает к верхнему краю */
+.header-menu {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 80px;
+    opacity: 0.9;
+}
+
+
+.image-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    height: 400px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* что это? */
+.image--cover {
+    object-fit: cover;
+}
+
+.poet-name {
+    padding-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+.poem__helper {
+    border-right: 5px solid rgb(255, 64, 64);
+    margin-right: 100px; 
+    
+
+}
+
+/* стиль строки с отточием внизу */
+.bordered {
+    border-bottom: 3px dotted black;
+    padding-bottom: 2em; 
+    /*padding-top: 2em;*/
+    /*border-top: 3px dotted black;*/
+    margin-bottom: 0.5em;
+    /*margin-top: 10em;*/
+}
+
+/* здесь начинаются стили элементов, содержание которых меняется от страницы к странице */
+
+/* шапка года - номер года и название его события */
+.yearHeader {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-left: 70px;
+}
+
+/* год события */
+.yearNumber {
+    font-size: 100px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+/* обозначение события */
+.yearEventTitle {
+    font-size: 21px;
+    max-width: 300px;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    padding-left: 20px;
+}
+
+/* блок из двух частей: 1) стихотворение и 2) комментарии к нему */
+
+
+/* вся первая часть со стихотворением */
+.poem {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    margin-bottom: 40px;
+    scroll-padding: revert;
+}
+
+/* название стихотворения */
+.poemTitle {
+    padding-bottom: 1.4em;
+    font-size: 28px;
+    font-weight: lighter;
+    color: brown;
+    line-height:0.2em;
+}
+
+.poetTitle {
+    padding-bottom: 1.4em;
+    font-size: 22px;
+    font-weight: lighter;
+    color: brown;
+    line-height:0.2em;
+}
+
+.poem__content {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/* стиль даты написания под стихотворением*/
+.poemYear {
+    padding-top: 2em;
+    text-align: right;
+    font-style: italic;
+}
+
+/* вся правая колонка с комментарием к стихотворению */
+.event {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.special {
+    font-style: italic;
+}
+
+/* цитируемые стихи*/
+.poem__content-quote {
+    line-height: 1.8em;
+    font-size: calc(100% - 4px);
+    padding-left: 3em;
+}
+
+/* весь раздел "Источники:" */
+.sources {
+    font-size: .9em;
+    margin-top: 2em;
+    padding-left: 0;
+}
+
+li>a {
+    font-size: .9em;
+}
+
+
+
+/* список источников */
+ul {
+    margin: 0;
+    padding-top: 0;
+    font-size: 18px;
+    list-style: none;
+}
+
+/* ссылкам в списке источников отступа не надо */
+li>a {
+    padding-left: 0;
+}
+
+.footer {
+    display: flex;
+    height: 136px;
+    margin-top: 20px;
+    border-top: 1px solid black;
+}
+
+.footer__content {
+    display: flex;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+}
+
+tr, td {     
+      border: 1px solid black;
+}
+
+td {
+    width: calc(100vw/6);
+}
+
+.todo { 
+    color:red; 
+}
+
+@media screen and (max-width: 1220px) {
+    .event {
+        flex-direction: column;
+    }
+    .eventText {
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .image-content {
+        /*width: 50%;*/
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 20px;
+    }
+    .eventText {
+        padding-top: 20px;
+    }
+    .header-menu {
+        height: auto;
+    }
+    .poem__helper {
+        display: none;
+    }
+    body {
+        padding: 20px;
+    }
+}
+
