@@ -71,7 +71,7 @@ a:hover {
 .header-menu {
     display: flex;
     align-items: center;
-    position: sticky;
+    position: absolute;
     top: 0;
     background-color: white;
     height: 80px;
