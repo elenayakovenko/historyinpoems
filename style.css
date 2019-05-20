@@ -169,21 +169,21 @@ a:hover {
 }
 
 /* название стихотворения */
-.poemTitle {
+.poemTitle, .poetTitle {
     font-size: 28px;
     font-weight: lighter;
     color: brown;
    
 }
-
+/*
 .poetTitle {
     padding-bottom: 1.4em;
     font-size: 22px;
     font-weight: lighter;
     color: brown;
-    line-height:0.2em;
+    line-height:1.2em;
 }
-
+*/
 .poem__content {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
