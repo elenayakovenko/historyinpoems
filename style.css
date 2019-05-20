@@ -67,6 +67,11 @@ a:hover {
     opacity: 1;
 }
 
+.up {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 /* меню прилипает к верхнему краю */
 .header-menu {
     display: flex;
