@@ -69,7 +69,7 @@ a:hover {
 
 .up {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 /* меню прилипает к верхнему краю */
